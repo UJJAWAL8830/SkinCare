@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link href="css_project.css" rel="stylesheet">
+</head>
+<body class="bg-secondary"> <!-- Using beige as background for form pages -->
+
+  <div class="header-section">
+    <h1>Feedback Form</h1>
+    <div class="subtitle">We value your opinion</div>
+  </div>
+
+  <div class="container">
+    <div class="form-container">
+      <form>
+        <h2 style="text-align: center; margin-bottom: 30px;">Personal Details</h2>
+        
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label>Gender:</label>
+        <div style="margin: 10px 0 25px 0;">
+          <input type="radio" id="male" name="gender" value="male" style="width: auto;">
+          <label for="male" style="margin-right: 15px;">Male</label>
+          <input type="radio" id="female" name="gender" value="female" style="width: auto;">
+          <label for="female" style="margin-right: 15px;">Female</label>
+          <input type="radio" id="other" name="gender" value="other" style="width: auto;">
+          <label for="other">Other</label>
+        </div>
+
+        <label for="dob">Birth Date:</label>
+        <input type="date" id="dob" name="dob">
+
+        <hr style="border: 0; border-top: 1px solid var(--accent); margin: 40px 0;">
+
+        <h2 style="text-align: center; margin-bottom: 30px;">Your Feedback</h2>
+
+        <label for="satisfaction">How satisfied were you with the product?</label>
+        <input type="text" id="satisfaction" name="satisfaction">
+
+        <label for="recommend">How likely are you to recommend our project?</label>
+        <input type="text" id="recommend" name="recommend">
+
+        <label for="expectations">Did the product meet your expectations?</label>
+        <textarea id="expectations" name="expectations" rows="4"></textarea>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <input type="submit" value="Submit">
+          <span style="display:inline-block; width: 20px;"></span>
+          <input type="reset" value="Reset" style="background-color: var(--accent); color: var(--text-main);">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <a href="1 pagefwd.html" class="back-link">Back to Home</a>
+
+</body>
+</html>
